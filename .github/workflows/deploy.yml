@@ -3,7 +3,7 @@ name: Deploy Vite Project to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust if your default branch is not 'main'
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 16  # Ensure compatibility with Vite
+        node-version: 18  # Change Node.js version to 18
 
     - name: Install dependencies
       run: |
